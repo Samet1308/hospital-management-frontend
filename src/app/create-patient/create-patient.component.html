@@ -1,0 +1,61 @@
+
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+  <a style="margin-left: 50px; color: white;" class="navbar-brand" href="#">SAMET TIP MERKEZİ</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
+navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a style="color: white; "class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/doctor-dash">Hasta Listesi</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h2 class="text-center">Yeni Hasta Ekle</h2>
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <label>İsim</label>
+      <input type="text" id="name" name="name" placeholder="Hasta İsmi" class="form-control" [(ngModel)]="patient.name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Yaş</label>
+      <input type="text" id="age" name="age" placeholder="Hasta Yaşı" class="form-control" [(ngModel)]="patient.age">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Kan Grubu</label>
+      <input type="text" id="blood" name="blood" placeholder="Kan Grubunu" class="form-control" [(ngModel)]="patient.blood">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Reçete</label>
+      <input type="text" id="prescription" name="prescription" placeholder="Reçete" class="form-control" [(ngModel)]="patient.prescription">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Doz</label>
+      <input type="text" id="dose" name="dose" placeholder="İlaç Dozu" class="form-control" [(ngModel)]="patient.dose">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Ücret</label>
+      <input type="text" id="fees" name="fees" placeholder="Ücret" class="form-control" [(ngModel)]="patient.fees">
+    </div>
+    <br>
+    <div class="form-group">
+      <label>Aciliyet Durumu</label>
+      <input type="text" id="urgency" name="urgency" placeholder="Aciliyet Durumu" class="form-control" [(ngModel)]="patient.urgency">
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-success">Kaydet</button>
+
+  </form>
+</div>
+

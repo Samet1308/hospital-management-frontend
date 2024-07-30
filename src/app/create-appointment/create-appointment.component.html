@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 class="text-center">Randevu Oluştur</h2>
+
+  <form (ngSubmit)="onSubmit()">
+      <label>İsim</label>
+      <input type="text" id="name" class="form-control" name="name" placeholder="İsminizi Giriniz" [(ngModel)]="appointment.name">
+    <br>
+
+      <label>Yaş</label>
+      <input type="text" id="age" class="form-control" name="age" placeholder="Yaşınızı Giriniz" [(ngModel)]="appointment.age">
+    <br>
+      <label>Semptomlar</label>
+      <input type="text" id="symptoms" class="form-control" name="symptoms" placeholder="Semptomlarınızı Giriniz" [(ngModel)]="appointment.symptoms">
+    <br>
+      <label>Telefon Numarası</label>
+      <input type="text" id="phoneNumber" class="form-control" name="phoneNumber" placeholder="Telefon Numaranızı Giriniz" [(ngModel)]="appointment.phoneNumber">
+    <br>
+    <button type="submit" class="btn btn-success">Kaydet</button>
+  </form>
+
+</div>
